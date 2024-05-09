@@ -1234,7 +1234,7 @@ Example:
 		            `(space :align-to (,(- (window-pixel-width)
                                            (window-scroll-bar-width)
                                            (window-right-divider-width)
-                                           (* (or (cdr (window-margins)) 1)
+                                           (* (or (car (window-margins)) 0)
                                               (frame-char-width))
                                            (pcase mode-line-right-align-edge
                                              ('right-margin
